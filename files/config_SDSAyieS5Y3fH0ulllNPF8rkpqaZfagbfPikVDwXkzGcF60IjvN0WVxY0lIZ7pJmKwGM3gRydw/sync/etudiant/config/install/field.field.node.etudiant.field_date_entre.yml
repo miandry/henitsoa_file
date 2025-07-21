@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_entre
+    - node.type.etudiant
+  module:
+    - datetime
+id: node.etudiant.field_date_entre
+field_name: field_date_entre
+entity_type: node
+bundle: etudiant
+label: 'Date d''entre'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

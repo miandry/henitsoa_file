@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.etudiant
+id: node.etudiant.title
+field_name: title
+entity_type: node
+bundle: etudiant
+label: 'Numero Matricule'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

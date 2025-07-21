@@ -1,0 +1,14 @@
+name: etudiant
+description: 'Provides etudiant content type and related configuration. '
+type: module
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - datetime
+  - field
+  - media
+  - media_library
+  - menu_ui
+  - node
+  - options
+  - taxonomy
+  - user

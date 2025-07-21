@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_genre
+    - node.type.etudiant
+  module:
+    - options
+id: node.etudiant.field_genre
+field_name: field_genre
+entity_type: node
+bundle: etudiant
+label: Genre
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

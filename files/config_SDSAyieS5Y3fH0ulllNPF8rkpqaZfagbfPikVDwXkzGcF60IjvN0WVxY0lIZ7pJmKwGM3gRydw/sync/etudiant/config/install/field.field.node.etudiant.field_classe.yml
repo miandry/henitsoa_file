@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_classe
+    - node.type.etudiant
+    - taxonomy.vocabulary.classe
+id: node.etudiant.field_classe
+field_name: field_classe
+entity_type: node
+bundle: etudiant
+label: Classe
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      classe: classe
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

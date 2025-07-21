@@ -1,0 +1,43 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.etudiant.field_adresse
+    - field.field.node.etudiant.field_classe
+    - field.field.node.etudiant.field_date_entre
+    - field.field.node.etudiant.field_date_sortie
+    - field.field.node.etudiant.field_genre
+    - field.field.node.etudiant.field_mere
+    - field.field.node.etudiant.field_nom
+    - field.field.node.etudiant.field_pere
+    - field.field.node.etudiant.field_photo
+    - field.field.node.etudiant.field_prenom
+    - field.field.node.etudiant.field_profession_mere
+    - field.field.node.etudiant.field_profession_pere
+    - node.type.etudiant
+  module:
+    - user
+id: node.etudiant.teaser
+targetEntityType: node
+bundle: etudiant
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_adresse: true
+  field_classe: true
+  field_date_entre: true
+  field_date_sortie: true
+  field_genre: true
+  field_mere: true
+  field_nom: true
+  field_pere: true
+  field_photo: true
+  field_prenom: true
+  field_profession_mere: true
+  field_profession_pere: true

@@ -1,0 +1,129 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.etudiant.field_adresse
+    - field.field.node.etudiant.field_classe
+    - field.field.node.etudiant.field_date_entre
+    - field.field.node.etudiant.field_date_sortie
+    - field.field.node.etudiant.field_genre
+    - field.field.node.etudiant.field_mere
+    - field.field.node.etudiant.field_nom
+    - field.field.node.etudiant.field_pere
+    - field.field.node.etudiant.field_photo
+    - field.field.node.etudiant.field_prenom
+    - field.field.node.etudiant.field_profession_mere
+    - field.field.node.etudiant.field_profession_pere
+    - node.type.etudiant
+  module:
+    - datetime
+    - options
+    - user
+id: node.etudiant.default
+targetEntityType: node
+bundle: etudiant
+mode: default
+content:
+  field_adresse:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_classe:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 111
+    region: content
+  field_date_entre:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 110
+    region: content
+  field_date_sortie:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 112
+    region: content
+  field_genre:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_mere:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_nom:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_pere:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_photo:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_prenom:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_profession_mere:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_profession_pere:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

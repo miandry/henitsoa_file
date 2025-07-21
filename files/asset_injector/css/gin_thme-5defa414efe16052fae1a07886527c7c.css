@@ -1,0 +1,56 @@
+.gin--dark-mode {
+  --colorGinButtonShadow: rgba(#111, .9);
+  --colorGinButtonText: #111;
+  --colorGinFocus: rgb(81, 168, 255);
+  --colorGinFocusNeutralRGB: rgba(255, 255, 255, .8);
+  --colorGinFocusBorder: rgba(0, 0, 0, .8);
+  --colorGinDisabled: #555;
+  --colorGinDisabledText: #1b1b1d;
+  --colorGinWarning: #dec15f;
+  --colorGinWarningLightBackground: rgba(222, 193, 95, .1);
+  --colorGinDanger: #ce6060;
+  --colorGinDangerLightest: #483439;
+  --colorGinGreen: #32cea4;
+  --colorGinInfo: #559bca;
+  --colorGinInputBackground: var(--colorGinLayer2Background);
+  --colorGinAppBackground: #d5d8dc;
+  --colorGinLayerBackground: #3271d8;
+  --colorGinLayer2Background: #3b3b3f;
+  --colorGinLayer3Background: #47474c;
+  --colorGinLayer4Background: #19191b;
+  --colorGinSecondaryBackground: var(--colorGinAppBackground);
+  --colorGinContextual: var(--colorGinLayer3Background);
+  --colorGinBorder: #43454a;
+  --colorGinSecondaryBorder: rgba(255, 255, 255, .075);
+  --colorGinLayerBorder: rgba(0, 0, 0, .05);
+  --colorGinLayer2Border: #76777b;
+  --colorGinTableBorder: #43454a;
+  --colorGinTabsBorder: rgba(255, 255, 255, .12);
+  --colorGinFormElementBorder: var(--colorGinLayer2Border);
+  --colorGinTitle: #fff;
+  --colorGinText: #d2d3d3;
+  --colorGinTextLight: #9e9fa0;
+  --colorGinTableHeader: #1b1b1d;
+  --colorGinSwitch: var(--colorGinPrimary);
+  --colorGinSwitchShadow: var(--colorGinPrimaryLight);
+  --ginShadowLevel1: 0 1px 2px rgb(0 0 0 / 2%), 0 3px 4px rgb(0 0 0 / 3%), 0 5px 8px rgb(0 0 0 / 4%);
+  --ginShadowLevel2: 0 1px 2px rgb(0 0 0 / 2%), 0 3px 4px rgb(0 0 0 / 3%), 0 5px 8px rgb(0 0 0 / 4%), 0 20px 24px rgb(0 0 0 / 12%);
+  --colorGinIcons: #888;
+  --colorGinPatternFallback: var(--colorGinLayer2Background);
+  --colorGinPattern: var(--colorGinBorder);
+  --colorGinStickyBg: var(--colorGinLayer4Background);
+}
+.gin--dark-mode .gin--high-contrast-mode {
+  --colorGinAppBackground: #000;
+  --colorGinText: rgba(255, 255, 255, .8);
+  --colorGinTextLight: rgba(255, 255, 255, .8);
+  --colorGinIcons: rgba(255, 255, 255, .8);
+  --colorGinFocus: rgba(255, 255, 255, .8);
+  --colorGinBorder: rgba(255, 255, 255, .8);
+  --colorGinSecondaryBorder: rgba(255, 255, 255, .6);
+  --colorGinLayerBorder: rgba(255, 255, 255, .6);
+  --colorGinLayer2Border: rgba(255, 255, 255, .8);
+  --colorGinTableBorder: rgba(255, 255, 255, .8);
+  --colorGinTabsBorder: rgba(255, 255, 255, .8);
+  --colorGinFormElementBorder: rgba(255, 255, 255, .8);
+}

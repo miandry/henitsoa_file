@@ -1,0 +1,15 @@
+.mb-1 {
+	margin-bottom:1rem;
+}
+
+.float-right{
+	float:right;
+	margin-top: -40px;
+}
+.fl{
+	float:right;
+}
+
+.readonly-checkboxes input[type="checkbox"] {
+  pointer-events: none;
+}

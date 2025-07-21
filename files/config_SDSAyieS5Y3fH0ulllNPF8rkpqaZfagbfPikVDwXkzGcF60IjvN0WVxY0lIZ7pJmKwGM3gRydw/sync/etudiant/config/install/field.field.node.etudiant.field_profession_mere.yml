@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_profession_mere
+    - node.type.etudiant
+id: node.etudiant.field_profession_mere
+field_name: field_profession_mere
+entity_type: node
+bundle: etudiant
+label: 'Profession du mere'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

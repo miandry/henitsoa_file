@@ -1,0 +1,131 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.etudiant.field_adresse
+    - field.field.node.etudiant.field_classe
+    - field.field.node.etudiant.field_date_entre
+    - field.field.node.etudiant.field_date_sortie
+    - field.field.node.etudiant.field_genre
+    - field.field.node.etudiant.field_mere
+    - field.field.node.etudiant.field_nom
+    - field.field.node.etudiant.field_pere
+    - field.field.node.etudiant.field_photo
+    - field.field.node.etudiant.field_prenom
+    - field.field.node.etudiant.field_profession_mere
+    - field.field.node.etudiant.field_profession_pere
+    - node.type.etudiant
+  module:
+    - datetime
+    - media_library
+id: node.etudiant.default
+targetEntityType: node
+bundle: etudiant
+mode: default
+content:
+  field_adresse:
+    type: string_textarea
+    weight: 9
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_classe:
+    type: entity_reference_autocomplete
+    weight: 10
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_date_entre:
+    type: datetime_default
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_date_sortie:
+    type: datetime_default
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_genre:
+    type: options_buttons
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_mere:
+    type: string_textfield
+    weight: 7
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_nom:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_pere:
+    type: string_textfield
+    weight: 5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_photo:
+    type: media_library_widget
+    weight: 4
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_prenom:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_profession_mere:
+    type: string_textfield
+    weight: 8
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_profession_pere:
+    type: string_textfield
+    weight: 6
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true
